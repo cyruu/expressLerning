@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../stylesheet/style.css" />
+  </head>
+  <body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- topmenu voor kleine schermen -->
+    <div class="topmenu">
+      <div class="bar">
+        <a href="#about" onclick="showContent('about')">About</a>
+        <a href="#services" onclick="showContent('services')">Services</a>
+        <a href="#clients" onclick="showContent('clients')">Clients</a>
+        <a href="#contact" onclick="showContent('contact')">Contact</a>
+      </div>
+    </div>
+
+    <!-- Zijmenu voor grote schermen -->
+    <div class="sidenav" id="sidebar">
+      <a href="#about" onclick="showContent('about')">About</a>
+      <a href="#services" onclick="showContent('services')">Services</a>
+      <a href="#clients" onclick="showContent('clients')">Clients</a>
+      <a href="#contact" onclick="showContent('contact')">Contact</a>
+    </div>
+
+    <!-- Hoofdinhoud -->
+    <div class="main" id="mainContent">
+      <!----------------- ABOUT SECTION ----------------->
+      <div class="content active" id="aboutContent">
+        <div class="two-columns">
+          <!----------------- LEFT COLUMN ----------------->
+          <div class="left-column">
+            <h2>This is a website on one page age <%=age%></h2>
+            <p class="info">
+              This is a complete website on one page; the menu consists of tabs
+              that open the linked content in the main section, which is where
+              you are reading this. When a tab is clicked, the existing content
+              in the main section disappears (hidden), and the content of the
+              menu item is displayed. Everything is linked with an ID, and we
+              use JavaScript to accomplish this. I believe it is now even
+              possible to do this with ::before and ::after in CSS.
+            </p>
+            <p class="info">
+              Some animations are used to make the content appear on the screen,
+              which is done with CSS @keyframes, without any libraries.
+            </p>
+            <p class="info">
+              A popup has also been added as an AI shop assistant; we can't do
+              without it anymore, can we? Additionally, I consistently use only
+              two columns in the main section; this is a very simple setup.
+            </p>
+
+            <h3>What We Offer</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Reprehenderit voluptate, excepturi hic nobis consequatur quibusdam
+              labore optio inventore pariatur earum quidem. Corporis voluptate,
+              ut perspiciatis molestias error nam deserunt voluptatem.
+            </p>
+            <button class="btn">Special Offer</button>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem
+              ipsum, dolor sit amet consectetur adipisicing elit. Omnis
+              consectetur similique quis facilis labore officiis, quasi ducimus,
+              perspiciatis officia ullam, minus architecto libero deserunt.
+            </p>
+
+            <!------------------ RIGHT COLUMN ----------------->
+          </div>
+          <div class="right-column">
+            <img src="https://iili.io/J61Waqu.png" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <!------------SERVICES------------->
+      <div class="content" id="servicesContent">
+        <div class="two-columns">
+          <div class="left-column">
+            <h2>Our Services</h2>
+            <p>
+              These are the services we provide. Lorem ipsum dolor sit, amet
+              consectetur adipisicing elit. Veniam a commodi amet labore vero.
+              Voluptate tempore ut officiis rem. Obcaecati tenetur odit optio
+              voluptas dignissimos fugiat excepturi deserunt veritatis corrupti?
+            </p>
+
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
+              at ab suscipit architecto natus consequuntur nesciunt dolor
+              distinctio corrupti, id repellat amet, laborum voluptas.
+              Perferendis sapiente suscipit facilis nemo dolorem.
+            </p>
+
+            <img src="https://iili.io/J61WKxt.png" alt="" />
+          </div>
+
+          <!------------------ RIGHT COLUMN ----------------->
+          <div class="right-column">
+            <img src="https://iili.io/J61Wn0G.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <!------------------ CLIENTS ----------------->
+
+      <div class="content" id="clientsContent">
+        <div class="two-columns">
+          <!----------------- LEFT COLUMN ----------------->
+          <div class="left-column">
+            <h2>Our Clients</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor,
+              est blanditiis excepturi repellendus dicta aperiam veritatis
+              consectetur cum sed, ducimus iste non ea tempora, et magni
+              maiores. Repellendus, accusamus incidunt.
+            </p>
+            <blockquote class="style1">
+              <span
+                >"Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem
+                ipsum dolor sit amet consectetur adipisicing elit. Voluptates,
+                voluptas!"</span
+              >
+            </blockquote>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit,
+              cumque. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Velit, cumque.
+            </p>
+            <p>
+              <img src="https://iili.io/J6Ee8gt.png" alt="" />
+            </p>
+          </div>
+
+          <!----------------- RIGHT COLUMN ----------------->
+          <div class="right-column">
+            <img src="https://iili.io/J61WTe2.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <!------------------ CONTACT ----------------->
+
+      <div class="content" id="contactContent">
+        <div class="two-columns">
+          <!----------------- LEFT COLUMN ----------------->
+          <div class="contact-left">
+            <h2>Contact Us</h2>
+            <p>
+              Reach out to us through the following means Lorem ipsum dolor sit
+              amet consectetur adipisicing elit. Illo nisi minus ea provident,
+              laudantium a reiciendis placeat unde perferendis minima facilis
+              officia laborum suscipit iure quisquam, voluptatem aut deleniti.
+              Neque.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem
+              ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum
+              dolor sit amet consectetur adipisicing elit.
+            </p>
+
+            <h3>Send us a message</h3>
+            <form>
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" />
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" />
+              <label for="message">Message</label>
+              <textarea id="message" name="message"></textarea>
+              <button class="btn" type="submit">Submit</button>
+            </form>
+            <div class="icons">
+              <a href="#"
+                ><img
+                  src="https://iili.io/J61WfWX.png"
+                  title="Facebook"
+                  alt="Facebook"
+              /></a>
+              <a href="#"
+                ><img src="https://iili.io/J61W3bI.png" title="X" alt="X"
+              /></a>
+              <a href="#"
+                ><img
+                  src="https://iili.io/J61W2ON.png"
+                  title="Instagram"
+                  alt="Instagram"
+              /></a>
+              <a href="#"
+                ><img
+                  src="https://iili.io/J61Wqsn.png"
+                  title="Google +"
+                  alt="G+"
+              /></a>
+            </div>
+          </div>
+
+          <!----------------- RIGHT COLUMN ----------------->
+          <div class="right-column">
+            <img src="https://iili.io/J61WRz7.png" alt="" />
+            <h3>Our Location</h3>
+            <ul>
+              <li>Address: Mainstreet 45, 1234AB City US</li>
+              <li>Phone: 123 456 789</li>
+              <h4>Opening hours</h4>
+              <li>Daily: 9am - 11pm</li>
+              <li>Weekends: 9am - 8pm</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!----------------- POPUP ----------------->
+    <div class="popup" id="popup">
+      <div class="popup-content">
+        <h3><span style="color: #d80707">&#128100;</span> Assistant</h3>
+        <p class="para">
+          Hi there how can I help you?
+          <span style="font-size: 30px">&#128172;</span>
+        </p>
+        <span class="close-btn" onclick="closePopup()"
+          ><span style="font-size: 20px; color: #504e4e">&#10005;</span></span
+        >
+        <form>
+          <label for="question">Type here</label>
+          <input type="text" id="question" name="question" />
+
+          <button class="ai-submit" type="submit">Submit</button>
+          <!-- Form fields go here -->
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
